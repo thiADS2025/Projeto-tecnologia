@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #campo1,#campo2{width: 185px;}
+        #homens, #mulheres{width: 185px;}
+        table th, td{width: 185px; text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Contagem de Homens e Mulheres</h1>
+    <div>
+            <input id="campo1" type="number" placeholder="Digite o numero de Homens">&nbsp;
+            <input id="campo2" type="number" placeholder="Digite o numero de Mulheres"><br><br>
+            <button id="botao">Calcular</button><br><br>
+    </div>
+
+    <table>
+        <tr>
+            <th>Quantidade</th>
+            <th>Percentual</th>
+        </tr>
+        <tr>
+            <th id="homens"></th>
+            <td id="respostaH"></td>
+        </tr>
+        <tr>
+            <th id="mulheres"></th>
+            <td id="respostaM"></td>
+        </tr>
+    </table>
+
+
+    <script>
+        let campo1 = document.getElementById('campo1');
+        let campo2 = document.getElementById('campo2');
+        let homens = document.getElementById('homens');
+        let mulheres = document.getElementById('mulheres');
+        let respostaH = document.getElementById('respostaH');
+        let respostaM = document.getElementById('respostaM');
+        const botao = document.getElementById('botao');
+        
+
+        botao.addEventListener("click",calcular);
+
+        function calcular(){
+            let valor1 = parseInt(campo1.value);
+            let valor2 = parseInt(campo2.value);
+            let total = parseInt(valor1 + valor2);
+            homens.innerHTML ='Homens: ' + valor1;
+            mulheres.innerHTML = "Mulheres: " + valor2;
+            respostaH.innerHTML= valor1 / total * 100 + '%';
+            respostaM.innerHTML = valor2 / total * 100 + "%";
+
+        }
+
+        
+
+    </script>
+</body>
+</html>

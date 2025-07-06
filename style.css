@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    background-color: rgba(0, 0, 255, 0.776);
+    text-align: center;
+    padding: 20px;
+}
+body {
+    background-color: darkgrey;
+}
+.white{
+    color: white;
+}
+#menu{
+    margin: 10px;
+    padding: 10px;
+}
+#menu a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    margin: 5px;
+}
+#menu a:hover{
+    color: blue;
+    background-color: white;
+}
+#content {
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+#posts {
+    width: 660px;
+    float: left;
+}
+.post {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    text-align: justify;
+}
+h2 {
+    font-size: 30px;
+    color: blue;
+    
+}
+.data-post {
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid blue;
+    display: block;
+}
+.img-post {
+    width: 620px;
+}
+#right-side {
+    width: 240px;
+    float: right;
+    
+}
+.content-right {
+    padding: 7px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background:white;
+    
+}
+.content-right h3 {
+    background-color: darkgrey;
+    padding: 3px;
+}
+.content-right a {
+     text-decoration: none;
+     color: blue;
+}
+.content-right a:hover {
+    text-decoration: underline;
+}
+#footer{
+    padding: 15px;
+    background-color: white;
+    float: inline-end;
+    width: 890px;
+    text-align: center;
+    color: blue;
+}
